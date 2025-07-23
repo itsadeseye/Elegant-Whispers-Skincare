@@ -674,31 +674,6 @@ footer a {
     color: white;
   }
 
-  @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero h2 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
 
 
 /* typing text CSS */
@@ -776,108 +751,47 @@ body {
   overflow-x: hidden;
 }
 
-/* Align navbar items properly on small screens */
+/* Default styles for desktop */
+body {
+  font-size: 16px;
+  padding: 0 80px;
+}
+
+/* Tablet styles */
+@media (max-width: 992px) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+/* Mobile styles */
 @media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.1rem;
-    margin-right: auto;
+  body {
+    padding: 0 20px;
+    font-size: 15px;
   }
 
-  .navbar-toggler {
-    margin-left: auto; /* Push hamburger to right */
-    margin-right: 0;
+  header, nav, .hero, .features, .contact, footer {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .navbar-collapse {
+  nav .logo {
     text-align: left;
   }
-}
 
-/* Optional: Tweak form width for small screens */
-@media (max-width: 576px) {
-  form {
-    padding: 0 15px;
+  nav .hamburger {
+    text-align: right;
+    display: block;
+  }
+
+  .feature-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
   }
 }
 
-@media (max-width: 768px) {
-  .navbar-brand {
-    font-size: 1.1rem;
-  }
-
-  .navbar-toggler {
-    margin-left: auto;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-}
-
-/* Newsletter Section */
-.newsletter-section {
-  background-color: #fef7f3;
-  padding: 4rem 1rem;
-  text-align: center;
-}
-
-.newsletter-container {
-  max-width: 600px;
-  margin: auto;
-}
-
-.newsletter-container h2 {
-  color: #4a2c2a;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.newsletter-container p {
-  color: #5a4e4c;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.newsletter-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.newsletter-form input {
-  padding: 0.8rem 1rem;
-  border: 1px solid #d9cfcf;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.newsletter-form button {
-  background-color: #8b4c3f;
-  color: #fff;
-  padding: 0.8rem 1rem;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-  background-color: #6f372f;
-}
-
-/* Responsive */
-@media (min-width: 600px) {
-  .newsletter-form {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .newsletter-form input {
-    width: 70%;
-  }
-
-  .newsletter-form button {
-    width: 30%;
-  }
-}
