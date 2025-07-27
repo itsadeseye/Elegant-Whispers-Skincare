@@ -173,10 +173,10 @@
   });
 </script>
 
-<script>// Show button after scrolling 100px
+<script>// Show button after scrolling 50px
 window.onscroll = function () {
   const btn = document.getElementById("backToTop");
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
     btn.style.display = "block";
   } else {
     btn.style.display = "none";

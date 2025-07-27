@@ -778,4 +778,51 @@ footer a {
     color: #222;
   }
 
-  
+  /* responsive styles */
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+
+    .hero h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .hero .cta-button {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .features .card {
+      margin-bottom: 20px;
+    }
+
+    .newsletter input, 
+    .newsletter button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .signup-form,
+    .contact-form {
+      padding: 20px;
+    }
+  }
+
+  @media(min-width: 1200px){
+    .container {
+      max-width: 1140px;
+    }
+  }
