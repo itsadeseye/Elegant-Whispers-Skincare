@@ -10,13 +10,15 @@ body {
   line-height: 1.6;
   background-color: #fffaf8;
   color: #3b3b3b;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 section {
   padding: 60px 10%;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   section {
     padding: 40px 6%;
   }
@@ -26,7 +28,7 @@ section {
   section {
     padding: 30px 5%;
   }
-} */
+}
 
 body {
       font-family: Arial, sans-serif;
@@ -180,6 +182,9 @@ body {
       background: linear-gradient(to right, #f3d2d2, #fdfaf6);
       text-align: center;
       padding: 4rem 2rem;
+      box-sizing: border-box;
+      width: 100%;
+      overflow: hidden;
     }
 
     .hero h2 {
@@ -718,14 +723,24 @@ footer a {
 }
 
 .typing-text {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
+  display: inline-block;
+  max-width: 100%;
   color: #3c3c3c;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid #3c3c3c;
   width: fit-content;
   animation: blink-caret 0.75s step-end infinite;
+}
+
+@media(max-width: 576px) {
+  .typing-text {
+  font-size: 1.2rem;
+  white-space: normal;
+  text-align: center;
+  }
 }
 
 @keyframes blink-caret {
