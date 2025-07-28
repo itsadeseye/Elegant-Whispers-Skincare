@@ -141,6 +141,8 @@ body {
       background-color: #f1e9dc;
       text-align: center;
       padding: 30px 20px;
+      max-width: 100%;
+      overflow: hidden;
     }
 
     footer p {
@@ -170,6 +172,8 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 100%;
+      overflow-x: hidden;
     }
 
     header h1 {
